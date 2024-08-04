@@ -48,7 +48,7 @@ def listen_for_wake_word(wake_word="hello", language='en'):
             transcription = transcribe_audio(audio, language).lower()
             if wake_word in transcription:
                 pygame.mixer.init()
-                pygame.mixer.music.load('C:\\Users\\ufo11\\jarvis\\in.wav')
+                pygame.mixer.music.load('.\\in.wav')
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy():
                     time.sleep(0.1)
