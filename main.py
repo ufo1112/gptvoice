@@ -81,7 +81,7 @@ def listen_and_respond(after_prompt=True, language='en'):
                 print("Listening for question..." if language == 'en' else "질문을 듣고 있습니다...")
                 audio = recognizer.listen(source)
 
-                pygame.mixer.music.load('C:\\Users\\ufo11\\jarvis\\in.wav')
+                pygame.mixer.music.load('.\\in.wav')
                 pygame.mixer.music.play()
                 while pygame.mixer.music.get_busy():
                     time.sleep(0.1)
